@@ -12,8 +12,7 @@
     "heroku-postbuild": "npm run install-client && npm run build-client",
     "server": "nodemon server --ignore client",
     "client": "npm start --prefix client",
-    "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\"",
-    "build": "react-scripts build"
+    "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -43,7 +42,8 @@
     "validator": "^13.7.0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "8.5.5"
   }
 
 }
